@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #B9B7BD;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #868B8E;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #EEEDE7;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #000;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #B9B7BD;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+  
+.wrapper .sidebar .social_media a:hover{
+    color: #000;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #EEEDE7;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #fff;
+  line-height: 40px;
+  font-size: 40px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.welcomeHead{
+color: #fff;
+font-size: 20px;
+padding-left: 10px;
+
+}
+
+.welcomeRemarks{
+color: #fff;
+font-size: 30px;
+padding-left: 10px;
+line-height: 50px;
+}
+
+.introPic{
+background-color: #eeede7;
+border-radius: 500px;
+width: 30%;
+float: right;
+}
+.introPic img{
+width: 110%;
+height: auto;
+}
+
+.AboutHead{
+color: #fff;
+font-size: 20px;
+padding-left: 10px;
+}
+
+.wrapper .main_content .AboutHead{
+  margin: 20px;
+  color: #fff;
+  line-height: 40px;
+  font-size: 40px;
+}
+
+.AboutRemarks{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 10px;
+  line-height: 50px;
+  }
+
+.AboutPic{
+  background-color: #eeede7;
+  border-radius: 500px;
+  width: 30%;
+  float: right;
+  }
+
+.AboutPic img{
+  width: 95%;
+  height: auto;
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.skills{
+width: 500px;
+margin: 40px;
+color: white;
+}
+.skills li{
+margin: 20px 0;
+}
+
+.bar{
+background: #2F5233;
+display: block;
+height: 10px;
+border: 1px solid rgba(0,0,0,0.3);
+border-radius: 3px;
+overflow: hidden;
+box-shadow: 0 0 10px #94C973;
+}
+
+.bar span{
+height: 10px;
+float: left;
+background: #B1D8B7;
+}
+
+.html{
+  width: 60%;
+  animation: html 2s
+}
+
+.mips{
+  width: 20%;
+  animation: mips 2s
+}
+
+.java{
+  width: 20%;
+  animation: java 2s
+}
+
+.ardui{
+  width: 40%;
+  animation: ardui 2s
+}
+
+.video{
+  width: 80%;
+  animation: video 2s
+}
+
+.photo{
+  width: 65%;
+  animation: photo 2s
+}
+
+.tofwar{
+  width: 100%;
+  animation: tofwar 2s
+}
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+@keyframes mips{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+@keyframes java{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+@keyframes ardui{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes video{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes photo{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+@keyframes tofwar{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.Project{
+  color: #fff;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.ProjectText{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 40px;
+  line-height: 50px;
+}
+
+.Cont{
+  color: #fff;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.ContText{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 40px;
+  line-height: 50px;
+}
+
+.wrapper .main_content .ContText .i{
+  display: block;
+  width: 40px;
+  background: #B9B7BD;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
